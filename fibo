@@ -1,0 +1,18 @@
+package classproject6;
+import java.util.Scanner;
+public class fibonacci {
+    public static void main(String[]args){
+        Scanner sc = new Scanner(System.in) ;
+        int a=0,b=1,c;
+        System.out.println("enter a num:");
+        int num = sc.nextInt();
+        System.out.println(+a+ " "+b);
+        for (int i=0;i<=num;i++){
+            c = a+b;
+            System.out.print(c+" ");
+            a=b;
+            b=c;
+
+        }
+    }
+}
